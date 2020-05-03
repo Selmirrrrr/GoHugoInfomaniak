@@ -24,7 +24,7 @@ jobs:
         
       #FTP-Deploy ingores files that are ingored in .gitignore
       - name: Remove .gitingore
-        run: rm .gitingore
+        run: rm .gitignore
         
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
