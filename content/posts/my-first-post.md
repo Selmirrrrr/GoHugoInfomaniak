@@ -1,6 +1,6 @@
 ---
-title: "My First Post"
+title: "My First Post on Infomaniak"
 date: 2020-05-03T13:15:02+02:00
-draft: true
+draft: false
 ---
 

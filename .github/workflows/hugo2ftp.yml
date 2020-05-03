@@ -22,10 +22,6 @@ jobs:
       - name: Build
         run: hugo --minify
         
-      #FTP-Deploy ingores files that are ingored in .gitignore
-      - name: Remove .gitingore
-        run: rm .gitingore
-        
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
