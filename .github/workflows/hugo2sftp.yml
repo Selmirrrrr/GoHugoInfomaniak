@@ -25,4 +25,13 @@ jobs:
         run: hugo --minify
       
       - name: SFTP Deploy
-        run:  sshpass -p "${{ secrets.SFTP_PASSWORD }}" rsync lxol_hugo@lxol.ftp.infomaniak.com:/web/hugo /public
+        uses: SamKirkland/FTP-Deploy-Action@3.0.0
+        with:
+          # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
+          ftp-server: sftp://lxol.ftp.infomaniak.com/web/hugo
+          # FTP account username
+          ftp-username: lxol_hugo
+          # FTP account password
+          ftp-password: ${{ secrets.SFTP }}
+          # The local folder to copy, defaults to root project folder
+          local-dir: public/
