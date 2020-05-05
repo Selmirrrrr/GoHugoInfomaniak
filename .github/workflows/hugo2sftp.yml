@@ -27,12 +27,8 @@ jobs:
       - name: SFTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
-          # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
           ftp-server: sftp://lxol.ftp.infomaniak.com/home/clients/bb580303c01e1c82764a46bd298a7064/web/hugo
-          # FTP account username
           ftp-username: lxol_hugo
-          # FTP account password
           ftp-password: ${{ secrets.SFTP_PASSWORD }}
-          # The local folder to copy, defaults to root project folder
           local-dir: public/
           git-ftp-args: --insecure
