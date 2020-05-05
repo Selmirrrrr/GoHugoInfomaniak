@@ -9,8 +9,6 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-      - name: install sshpass
-        run: sudo apt-get install sshpass
         
       - uses: actions/checkout@v2
         with:
@@ -25,16 +23,6 @@ jobs:
 
       - name: Build
         run: hugo --minify
-        
-      - name: FTP Deploy
-        uses: SamKirkland/FTP-Deploy-Action@3.0.0
-        with:
-          # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-          ftp-server: bizy.ch
-          # FTP account username
-          ftp-username: op2zb_Roxtar
-          # FTP account password
-          ftp-password: ${{ secrets.FTP_PASSWORD }}
-          # The local folder to copy, defaults to root project folder
-          local-dir: public/
       
+      - name: SFTP Deploy
+        run:  sshpass -p "${{ secrets.SFTP_PASSWORD }}" rsync root@1.2.3.4:/web/hugo /public
