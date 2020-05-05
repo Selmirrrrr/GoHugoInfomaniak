@@ -189,7 +189,7 @@ title = "Selmir.Dev.Blog"
   priority = 0.5
 
 [Permalinks]
-  posts = ":filename"
+  posts = ":year/:month/:filename"
 
 [mediaTypes]
   [mediaTypes."text/plain"]
