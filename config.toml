@@ -95,7 +95,7 @@ enableEmoji = true
   [params.footer]
     enable = true
     #  Custom content (HTML format is supported)
-    custom = 'Copyleft @Selmir 2020'
+    custom = 'Copyleft @Selmir 2020 <span class="fas fa-copyright fa-flip-horizontal"></span>'
     #  whether to show Hugo and theme info
     hugo = false
     #  whether to show copyright info
@@ -231,19 +231,18 @@ enableEmoji = true
       Linkedin = true
       HackerNews = true
       Reddit = true
-      Xing = false
       Pocket = false
       Evernote = true
     #  Comment config
     [params.page.comment]
       enable = true
-      # Gitalk comment config
-      [params.page.comment.gitalk]
+    [params.page.comment.utterances]
         enable = true
-        owner = "selmirrrrr"
-        repo = "GoHugoInfomaniak"
-        clientId = "dbc27f8cafb252e39302"
-        clientSecret = "24db90ed78010f55c9e4d27e0edc7a707dd29c2c"
+        repo = "Selmirrrrr/GoHugoInfomaniak"
+        issueTerm = "pathname"
+        label = "comment"
+        lightTheme = "github-light"
+        darkTheme = "github-dark"
 
 # Markup related config in Hugo
 [markup]
