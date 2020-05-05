@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
+      - name: install sshpass
+        run: sudo apt-get install sshpass
+        
       - uses: actions/checkout@v2
         with:
           submodules: true  # Fetch Hugo themes
