@@ -28,7 +28,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
           # Deployment destination server & path. Formatted as protocol://domain.com:port/full/destination/path/
-          ftp-server: sftp://lxol.ftp.infomaniak.com/web/hugo
+          ftp-server: sftp://${{ secrets.SFTP_PATH }}
           # FTP account username
           ftp-username: lxol_hugo
           # FTP account password
