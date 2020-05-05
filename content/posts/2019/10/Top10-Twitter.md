@@ -1,5 +1,5 @@
 ---
-title: Top 10 des comptes Twitter
+title: Top 10 des comptes Twitter $ suivre
 subtitle: À suivre pour un dév .NET
 tags: [twitter]
 date: 2019-10-05T15:58:26+08:00
