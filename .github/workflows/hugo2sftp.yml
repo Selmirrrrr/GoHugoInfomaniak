@@ -3,7 +3,7 @@ name: hugo2sftp
 on:
   push:
     branches:
-      - mastersftp
+      - master
 
 jobs:
   deploy:
