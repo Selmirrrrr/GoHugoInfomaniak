@@ -40,7 +40,7 @@ Dans le cas d'un hébergement Infomaniak gratuit, il est impossible créer de co
 
 Je comprends qu'Infomaniak doit susciter le besoin de passer aux offres payantes, mais en 2020 ne pas proposer de base un accès SFTP me sidère. Mais, ainsi soit-il, cela ne nous empêchera pas de poursuivre cette marche à suivre et d'héberger notre blog chez eux.
 
-Il faut juste être conscient que, dans le cas d'un compte FTP, les accès transiteront en clair entre GitHub et Infomaniak. Le risque de compromission est très faible mais il existe et il faut le savoir.
+Il faut juste être conscient que, dans le cas d'un compte FTP, les accès transiteront en clair entre GitHub et Infomaniak. Vous vous exposerez donc à un risque d'une attaque [MITM](https://fr.wikipedia.org/wiki/Attaque_de_l%27homme_du_milieu).
 
 ## GitHub
 ### Création d'un nouveau repository
