@@ -27,8 +27,8 @@ jobs:
       - name: SFTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@3.0.0
         with:
-          ftp-server: sftp://lxol.ftp.infomaniak.com/home/clients/bb580303c01e1c82764a46bd298a7064/web/hugo
-          ftp-username: lxol_hugo
+          ftp-server: ${{ secrets.SFTP_SERVER }}/web/hugo
+          ftp-username: ${{ secrets.SFTP_USER }}
           ftp-password: ${{ secrets.SFTP_PASSWORD }}
           local-dir: public/
-          git-ftp-args: --insecure
+          git-ftp-args: --insecure --remote-root "/web/hugo"
