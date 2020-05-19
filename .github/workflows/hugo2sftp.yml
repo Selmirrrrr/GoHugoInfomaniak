@@ -31,4 +31,4 @@ jobs:
           ftp-username: ${{ secrets.SFTP_USER }}
           ftp-password: ${{ secrets.SFTP_PASSWORD }}
           local-dir: public/
-          git-ftp-args: --insecure --remote-root "/web/hugo"
+          git-ftp-args: --remote-root "/web/hugo"
