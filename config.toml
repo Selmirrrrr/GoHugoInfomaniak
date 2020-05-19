@@ -112,7 +112,7 @@ title = "Selmir.Dev.Blog"
     ruby = true
     fraction = true
     fontawesome = true
-    linkToMarkdown = true
+    linkToMarkdown = false
     rssFullText = false
     [params.page.toc]
       enable = true
