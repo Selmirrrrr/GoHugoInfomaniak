@@ -42,7 +42,7 @@ Pour commencer, rendez-vous dans votre console d'administration de votre héberg
 Cet étape est probablement déjà faite pour 99% des lecteurs de ce blog c'est pourquoi je ne vais pas la détailler, je vous recommande simplement de suivre la [documentation](https://help.github.com/en/github/getting-started-with-github/set-up-git) de GitHub pour cela.
 
 ### 3.2 GitHub Repo
-Pour créer un nouvel repository GitHub, se rendre sur [la page de création](https://github.com/new) et saisir les informations souhaitées : 
+Pour créer un nouveau repository GitHub, se rendre sur [la page de création](https://github.com/new) et saisir les informations souhaitées : 
 
 {{< image src="/2020/05/Hugo-Infomaniak-GithubActions/github-new-repo.png" caption="Création repo GitHub" >}}
 
