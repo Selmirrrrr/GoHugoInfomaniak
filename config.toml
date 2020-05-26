@@ -149,14 +149,7 @@ title = "Selmir.Dev.Blog"
     [params.page.comment]
       enable = true
     [params.page.comment.commento]
-      enable = false
-    [params.page.comment.utterances]
-        enable = false
-        repo = "Selmirrrrr/GoHugoInfomaniak"
-        issueTerm = "pathname"
-        label = "comment"
-        lightTheme = "github-light"
-        darkTheme = "github-dark"
+      enable = true
         
 [markup]
   [markup.highlight]
